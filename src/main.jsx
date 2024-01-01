@@ -12,7 +12,7 @@ import store from './utils/store.js'
 import Profile from './components/Profile.jsx'
 import Explore from './pages/Explore.jsx'
 import UserProfile from './pages/UserProfile.jsx'
-import Notification from './pages/Notification.jsx'
+
 
 
 const appRouter = createBrowserRouter([
@@ -50,10 +50,6 @@ const appRouter = createBrowserRouter([
       {
         path:'/app/profile/:id',
         element:<UserProfile/>
-      },
-      {
-        path:'/app/notification',
-        element:<Notification/>
       }
     ]
   },

@@ -42,4 +42,10 @@ Suggestions of other users
 dark/light mode
 
 
+Thing left now
+- Loader
+- error handling
+- Better UI
+
+
 

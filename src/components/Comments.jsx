@@ -9,6 +9,7 @@ const Comments = ({postId}) => {
     const user = useSelector((store)=>store.auth.items)
     const comments = useSelector((state) => state.comments);
     const [replyText,setReplyText] = useState("")
+    const [loading,setLoading] = useState(true)
 
     const dispatch = useDispatch()
     const handleReply = ()=>{
@@ -19,9 +20,10 @@ const Comments = ({postId}) => {
 
     useEffect(()=>{
       dispatch(fetchCommentsByPostId(postId))
+      setLoading(false)
     },[postId,dispatch])
    
-
+  if(loading) return <h2>loading</h2>
   return (
     <div className="p-2 px-10">
         <div>

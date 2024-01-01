@@ -45,7 +45,7 @@ const Member = () => {
                
                   <img  src={singleUser.profile_url ? singleUser.profile_url : avatar} className="w-10 h-10 rounded-full" />
                   
-               <p className="p-2">{singleUser.name}</p>
+               <p className="p-2 hover:text-blue-950">{singleUser.name}</p>
               </div>
               </Link>
             )

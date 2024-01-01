@@ -42,7 +42,7 @@ const Explore = () => {
 
 
   return (
-    <div className="p-4 ml-[380px]">
+    <div className="p-4 ml-[300px]">
         <div >
             <h1 className="text-2xl mb-2 ">Explore</h1>
             <div className="flex w-[220px] justify-between">

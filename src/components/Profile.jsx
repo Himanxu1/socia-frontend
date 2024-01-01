@@ -96,7 +96,7 @@ const Profile = () => {
        },[id,postChange])  
 
   return (
-    <div className='ml-[340px]'>
+    <div className='ml-[300px]'>
         <img src={banner} className="mt-2 relative w-[600px] h-[170px]  object-cover p-2 rounded-xl ml-2" />
            <img  src={  user.profile_url ? user.profile_url : avatar} className='w-32 h-32 absolute top-40 left-[460px]' />
         <div className='relative pt-24 pl-20  w-[600px] h-[200px] shadow-[0_3px_10px_rgb(0,0,0,0.2)] ml-4'> 

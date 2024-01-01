@@ -88,7 +88,7 @@ const PostCard = () => {
     <div className=" flex items-center w-[500px] h-20 m-2 p-2 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
       <img src={ user.profile_url ? user.profile_url :  avatar}  className="w-12 h-12 rounded-full"/>
        <div className="border border-grey-100 p-4  ml-2 cursor-pointer rounded-xl w-full" onClick={()=>setShowModal(true)}>
-        <h1>Share Post</h1>
+        <h1 className="font-normal">Share what&apos;s on your mind</h1>
        </div>
     </div>
    <div>
@@ -99,7 +99,7 @@ const PostCard = () => {
           >
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
               {/*content*/}
-              <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+              <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-blue-950 outline-none focus:outline-none">
                 {/*header*/}
                 <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
                   <h3 className="text-2xl font-semibold">
@@ -116,7 +116,7 @@ const PostCard = () => {
                 </div>
 
                 <div className="relative px-4 flex-auto w-[400px] h-[80px]">
-                  <textarea className="w-full p-2 h-full resize-none border-2 border-black "  onChange={(e)=>setTitle(e.target.value)}  />
+                  <textarea className="w-full p-2 h-full resize-none border border-black bg-blue-950 "  onChange={(e)=>setTitle(e.target.value)}  />
                 </div>
                   <div className="flex justify-center">
                     

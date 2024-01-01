@@ -16,16 +16,16 @@ function App() {
   const bg = theme === "dark" ? "bg-blue-950" : "bg-white";
   const text = theme === "dark" ? "text-white" : "text-black";
   return (
-    <>
+    <div >
       <Navbar />
       <div
-        className={` flex pt-12 justify-between w-full px-20  ${bg} ${text}`}
+        className={` flex pt-20 justify-between w-full px-20  min-h-screen ${bg} ${text}`}
       >
         <Sidebar />
         <Outlet />
         <Member />
       </div>
-    </>
+    </div>
   );
 }
 

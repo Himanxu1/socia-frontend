@@ -9,7 +9,7 @@ const Home = () => {
   <div className="">
   
 
-<div className="flex flex-col ml-[380px]">
+<div className="flex flex-col ml-[300px]">
       {/* Post Card */}
       <PostCard/>
 

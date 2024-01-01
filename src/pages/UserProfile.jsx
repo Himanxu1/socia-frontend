@@ -103,7 +103,7 @@ const UserProfile = () => {
     // console.log(isfollowing);
     
   return (
-    <div className='ml-[340px]'>
+    <div className='ml-[280px]'>
       <ToastContainer/>
         <div className='relative'>
             <img  src={banner} className='w-[600px] h-[180px] object-cover mt-2 rounded' />

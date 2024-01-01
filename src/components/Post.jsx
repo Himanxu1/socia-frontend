@@ -1,6 +1,5 @@
 
 import { AiOutlineLike } from "react-icons/ai";
-import { IoMdShareAlt } from "react-icons/io";
 import { GoBookmarkSlashFill } from "react-icons/go";
 import { FaComment } from "react-icons/fa";
 import avatar from '../assets/avatar.png';
@@ -115,10 +114,7 @@ const date = `${dateObject.getUTCDate()}/${dateObject.getUTCMonth() + 1}/${dateO
          <FaComment />
          <p className="text-sm font-sans ml-2">Comment</p>
         </div>
-        <div  className="flex items-center cursor-pointer">
-        <IoMdShareAlt />
-        <p  className="text-sm font-sans ml-2">Repost</p>
-        </div>
+        
         {
           label 
           ?   

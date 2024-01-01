@@ -14,7 +14,7 @@ const Bookmarks = () => {
     },[])
 
   return (
-    <div className="ml-[380px]">
+    <div className="ml-[300px]">
       <h1 className="p-2 text-2xl font-semibold">All Your Bookmarks📃</h1>
         {
              bookmarkpost?.length === 0 ? <p className="py-4 font-semibold text-2xl">No Bookmarks</p> :  bookmarkpost?.map((item)=>{

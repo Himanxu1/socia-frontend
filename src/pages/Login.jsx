@@ -6,8 +6,12 @@ import { useDispatch } from "react-redux";
 import { addUser } from "../utils/slices/authSlice";
 import { showToast } from "../utils/toast";
 import { ToastContainer } from "react-toastify";
+import {Oval} from 'react-loader-spinner'
+import { useState } from "react";
+
 
 const Login = () => {
+    const [loading,setLoading] = useState(false)
     
   const initialValues ={
     email:"",
@@ -22,10 +26,13 @@ const Login = () => {
         initialValues={initialValues}
         validationSchema={loginSchema}
         onSubmit={(values) => {
+            setLoading(true)
             // eslint-disable-next-line no-undef
             axios.post(import.meta.env.VITE_BACKEND_URI+ '/api/user/login',values).then((res)=>{
+                setLoading(false)
                 localStorage.setItem('token',res.data.token)   
                 dispatch(addUser(res.data.user))
+               
       
                 if(res.status == 200 || res.status == 201){
                 
@@ -64,6 +71,21 @@ const Login = () => {
     theme="light"
     />
           <div className="flex flex-col items-center min-h-screen pt-6 sm:justify-center sm:pt-0 bg-gray-50">
+              <div className="absolute">
+              
+              {
+                loading && <Oval
+                visible={true}
+                height="80"
+                width="80"
+                color="#4fa94d"
+                ariaLabel="oval-loading"
+                wrapperStyle={{}}
+                wrapperClass=""
+                />
+              }
+              
+              </div>
               <div>
                   <a href="/">
                       <h3 className="text-4xl font-bold text-purple-600">
